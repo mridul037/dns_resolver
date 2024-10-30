@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Simple DNS Lookup Installer
+# Simple DNS Resolver Installer
 
 # Define the repository URL
-REPO_URL="https://github.com/mridul037/dns-resolver.git"
+REPO_URL="https://github.com/mridul037/dns_resolver.git"
 
 # Function to display messages
 echo_message() {
@@ -21,13 +21,13 @@ echo_message "Cloning the repository..."
 git clone $REPO_URL
 
 # Change to the repository directory
-cd simple-dns-lookup || { echo_message "Clone failed! Exiting."; exit 1; }
+cd dns_resolver || { echo_message "Clone failed! Exiting."; exit 1; }
 
 # Make the script executable
 echo_message "Making the script executable..."
-chmod +x dns_lookup.sh
+chmod +x dns_resolver.go
 
 # Inform the user of the next steps
 echo_message "Installation complete!"
-echo "You can now use the DNS lookup tool by running:"
-echo "./dns_lookup.sh <domain> <record_type> [dns_server]"
+echo "You can now use the DNS resolver by running:"
+echo "./dns_resolver <domain> <record_type> [dns_server]"
