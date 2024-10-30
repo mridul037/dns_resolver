@@ -10,14 +10,14 @@ You can install the DNS resolver using Go:
 go install github.com/mridul037/dns-resolver@latest
 ```
 
-You can install the DNS resolver using Git Clone ```https://github.com/mridul037/dns_resolver```:
-
 ```bash
 
 dns_resolver <domain> <record_type> [dns_server]
 
 Example: dns_resolver google.com A cloudflare
 ```
+
+You can install the DNS resolver using Git Clone ```https://github.com/mridul037/dns_resolver```:
 
 
 ```bash
