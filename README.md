@@ -21,3 +21,12 @@ Example: dns_resolver google.com A cloudflare
 - Resolve various DNS record types: [ A, AAAA, CNAME, MX, TXT, SRV ].
 - Configurable DNS servers [Google (default), cloudflare,dnswatch,quad9].
 - Simple command-line interface.
+
+Specifies the type of DNS record to retrieve. Common types include:
+## Records
+- A: Returns the IPv4 address associated with the domain.
+- AAAA: Returns the IPv6 address associated with the domain.
+- CNAME: Returns the canonical name (alias) of the domain.
+- MX: Returns mail exchange server records.
+- TXT: Returns text records associated with the domain.
+- SRV: Returns service records
