@@ -16,6 +16,18 @@ dns_resolver <domain> <record_type> [dns_server]
 
 Example: dns_resolver google.com A cloudflare
 ```
+
+
+```bash
+ go build -o dns_resolver dns_resolver.go
+ ./dns_resolver example.com A
+
+------or---------------
+go run dns_resolver.go example.com A cloudflare
+
+```
+
+
 ## Features
 
 - Resolve various DNS record types: [ A, AAAA, CNAME, MX, TXT, SRV ].
