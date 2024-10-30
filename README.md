@@ -1,4 +1,4 @@
-# DNS Resolver
+# DNS Resolver 🌐 
 
 A simple command-line DNS resolver written in Go.
 ## Install using curl
