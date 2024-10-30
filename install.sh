@@ -16,9 +16,15 @@ if ! command -v git &> /dev/null; then
     exit 1
 fi
 
+if ! command -v go &> /dev/null; then
+    echo_message "Go is not installed. Please install Go first."
+    exit 1
+fi
+
 # Clone the repository
 echo_message "Cloning the repository..."
 git clone $REPO_URL
+
 
 # Change to the repository directory
 cd dns_resolver || { echo_message "Clone failed! Exiting."; exit 1; }
@@ -26,7 +32,7 @@ cd dns_resolver || { echo_message "Clone failed! Exiting."; exit 1; }
 # Make the script executable
 echo_message "Making the script executable..."
 chmod +x dns_resolver.go
-
+go build -o dns_resolver dns_resolver.go
 # Inform the user of the next steps
 echo_message "Installation complete!"
 echo "You can now use the DNS resolver by running:"
