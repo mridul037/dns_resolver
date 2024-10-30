@@ -1,7 +1,10 @@
 # DNS Resolver
 
 A simple command-line DNS resolver written in Go.
-
+## Install using curl
+```bash
+curl -sSL https://raw.githubusercontent.com/mridul037/dns_resolver/main/install.sh | bash
+```
 ## Installation
 
 You can install the DNS resolver using Go:
