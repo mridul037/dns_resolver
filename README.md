@@ -7,7 +7,7 @@ A simple command-line DNS resolver written in Go.
 You can install the DNS resolver using Go:
 
 ```bash
-go install github.com/mridul037/dns-resolver@latest
+go install github.com/mridul037/dns_resolver@latest
 ```
 
 ```bash
