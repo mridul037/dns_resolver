@@ -18,6 +18,6 @@ Example: dns_resolver google.com A cloudflare
 ```
 ## Features
 
-- Resolve various DNS record types: A, AAAA, CNAME, MX, TXT, SRV, etc.
-- Configurable DNS servers (e.g., Google Public DNS, Cloudflare).
+- Resolve various DNS record types: [ A, AAAA, CNAME, MX, TXT, SRV ].
+- Configurable DNS servers [Google (default), cloudflare,dnswatch,quad9].
 - Simple command-line interface.
